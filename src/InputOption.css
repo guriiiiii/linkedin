@@ -1,0 +1,118 @@
+.inputOption{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+    color: gray;
+    padding: 10px;
+}
+
+.inputOption> form{
+    display: none;
+}
+
+.inputOption:hover{
+    background-color: whitesmoke;
+    border-radius: 10px
+}
+
+.inputOption > h4{
+    margin-left: 5px;
+}
+
+.inputBack{
+    position: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transition: ease-in-out 1s;
+}
+
+.photo{
+    background-color: white;
+    padding: 3%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 70vw;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+
+.options__input{
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.options__input > form{
+    display: flex;
+    width: 100%;
+}
+
+.options__input> form > input{
+    border: none;
+    flex: 1;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+}
+
+.closeIcon{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.photo > img{
+    display: flex;
+    object-fit: contain;
+    width: 500px;
+    justify-self:left;
+}
+
+.postButton{
+    background-color: #0074b1;
+    border: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    padding: 8px;
+    width: 100px;
+    font-size:15px;
+    border-radius: 30px;
+}
+
+@media (max-width:450px) {
+    .photo > img{
+        display: flex;
+        object-fit: contain;
+        width: 200px;
+        justify-self:left;
+    }
+
+    .photo{
+        height: 40vh;
+    }
+}
